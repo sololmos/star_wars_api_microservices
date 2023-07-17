@@ -23,7 +23,7 @@ planetSchema.statics.list= async function(){
   planetSchema.statics.get= async function(id){
       return await  this.findById(id)
       .populate("res_idents",["_id", "name"])
-    .populate("films",["_id", "title"]);
+      .populate("films",["_id", "title"]);
     }
     
     planetSchema.statics.insert= async function(planet){

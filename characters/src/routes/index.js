@@ -6,7 +6,6 @@ const router= Router();
 
 router.get("/characters",  controllers.getCharacters);
 router.get("/characters/:id",  controllers.getCharacterById);
-
 router.post("/characters",middlewares.characterValidation, controllers.createCharacters);
 
 

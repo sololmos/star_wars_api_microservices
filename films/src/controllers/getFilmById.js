@@ -7,7 +7,6 @@ module.exports= async (req, res)=>{
    
     const films = await Films.getById(id);
     response(res,200,films.data )
-    //res.status(200).json(characters);
-    //console.log("characters")
+    
 }
   

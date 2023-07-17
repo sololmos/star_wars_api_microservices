@@ -14,7 +14,7 @@ server.use((err,req,res,next)=>{
         error:true,
         message:err.message,
     });
-    //res.send("Este es el manejador de errores");
+    
 })
 
 
